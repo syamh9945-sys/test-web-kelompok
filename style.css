@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f5f9;
+  color: #1e293b;
+}
+
+header {
+  background: #2563eb;
+  color: white;
+  text-align: center;
+  padding: 30px 15px;
+}
+
+header h1 {
+  margin: 0 0 8px;
+}
+
+header p {
+  margin: 0;
+}
+
+main {
+  max-width: 750px;
+  margin: 25px auto;
+  padding: 0 15px;
+}
+
+.panel {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #0000000d;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input, select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+  background: white;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 18px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.anggota {
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #dbeafe;
+  border-radius: 9px;
+}
+
+.anggota h3 {
+  margin-top: 0;
+}
+
+.jam {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.info {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.slot {
+  background: #eff6ff;
+  border-left: 4px solid #2563eb;
+  padding: 13px;
+  margin: 12px 0;
+  border-radius: 5px;
+}
+
+.sukses {
+  color: #15803d;
+}
+
+.peringatan {
+  color: #b45309;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #64748b;
+  font-size: 13px;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+@media (max-width: 480px) {
+  .panel {
+    padding: 16px;
+  }
+
+  .jam {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .tabel-container {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 15px;
+}
+
+.tabel-hasil {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tabel-hasil th,
+.tabel-hasil td {
+  padding: 12px;
+  border: 1px solid #dbe3ef;
+  text-align: left;
+}
+
+.tabel-hasil th {
+  background: #2563eb;
+  color: white;
+}
+
+.tabel-hasil tbody tr:nth-child(even) {
+  background: #f1f5f9;
+}
+
+.tabel-hasil tbody tr:hover {
+  background: #dbeafe;
+}
+}
