@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeetSync - Pencari Jadwal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>MeetSync</h1>
+    <p>Cari waktu terbaik untuk bertemu dengan kelompokmu.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Pengaturan Pertemuan</h2>
+
+      <label for="hari">Hari pertemuan</label>
+      <select id="hari">
+        <option>Senin</option>
+        <option>Selasa</option>
+        <option>Rabu</option>
+        <option>Kamis</option>
+        <option>Jumat</option>
+        <option>Sabtu</option>
+        <option>Minggu</option>
+      </select>
+
+      <label for="jumlah">Jumlah anggota</label>
+      <input type="number" id="jumlah" min="2" max="30" value="8">
+
+      <label for="minimal">Minimal anggota yang hadir</label>
+      <input type="number" id="minimal" min="2" max="30" value="4">
+
+      <button id="buatForm">Buat Form Anggota</button>
+    </section>
+
+    <section class="panel">
+      <h2>Jadwal Sibuk Anggota</h2>
+      <p class="info">
+        Masukkan jam sibuk setiap anggota. Jika anggota tidak punya
+        jadwal sibuk, biarkan jam mulai dan selesai kosong.
+      </p>
+
+      <div id="daftarAnggota"></div>
+
+      <button id="hitung">Cari Waktu Pertemuan</button>
+    </section>
+
+    <section id="hasil" class="panel" hidden>
+      <h2>Hasil Pencarian</h2>
+      <div id="isiHasil"></div>
+    </section>
+  </main>
+
+  <footer>MeetSync &copy; 2026</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
